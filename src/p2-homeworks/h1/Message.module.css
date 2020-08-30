@@ -1,0 +1,49 @@
+.canvas {
+    background-color: greenyellow;
+    height: 250px;
+}
+.form {
+    margin-top: 10px;
+    margin-left: 60px;
+    position: absolute;
+    background: black;
+    border-radius: .4em;
+    width: 210px;
+    height: 80px;
+    text-indent: 20px;
+}
+.ava {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: 2px solid green;
+}
+.name {
+    color: blueviolet;
+    padding-top: 10px;
+
+}
+.time {
+    color: darkseagreen;
+    text-align: end ;
+
+}
+.form:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 90%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: black;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}
+.message  {
+    color: white
+}
