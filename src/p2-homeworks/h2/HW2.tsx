@@ -7,7 +7,7 @@ export type AffairPriorityType = 'high' | 'low' | 'middle' ; // need to fix any
 export type AffairType = {
     _id: number,
     name: string,
-    priority: string
+    priority: AffairPriorityType
 }
 
 // need to fix any
@@ -56,6 +56,7 @@ function HW2() {
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+
             />
 
             <hr/>

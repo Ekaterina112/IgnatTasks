@@ -1,7 +1,30 @@
-.someClass {
-
+.all{
+    background-color: #3CBC8D;
+    color: white;
 }
 
+.notError {
+    padding: 5px 20px;
+    margin: 5px 0;
+    border-color: white;
+    background-color: #3CBC8D;
+    color: white;
+    outline: none;
+}
 .error {
-    border: 1px solid red;
+    padding: 5px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-color: red;
+    background-color: #3CBC8D;
+    color: white;
+    outline: none;
+}
+.button {
+    padding: 5px 20px;
+    margin: 5px 0;
+    border-color: white;
+    background-color: #3CBC8D;
+    color: white;
+    outline: none;
 }
