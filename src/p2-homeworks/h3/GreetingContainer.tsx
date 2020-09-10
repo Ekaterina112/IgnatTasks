@@ -18,15 +18,17 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setName(e.currentTarget.value);
+        setError('')
     };
     const addUser = () => {
         if (name.trim() === '') {
             setError('You entered an empty value')
         } else {
+
             alert(`Hello ${name.trim()} !`)
             addUserCallback(name)
             setName('')
-            setError('')
+           /* setError('')*/
         }
         // need to fix*/
     };
