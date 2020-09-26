@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/IgnatTasksRep/static/css/main.6e8be272.chunk.css",
+    "main.js": "/IgnatTasksRep/static/js/main.8ed88b1a.chunk.js",
+    "main.js.map": "/IgnatTasksRep/static/js/main.8ed88b1a.chunk.js.map",
+    "runtime-main.js": "/IgnatTasksRep/static/js/runtime-main.6f2dcb3c.js",
+    "runtime-main.js.map": "/IgnatTasksRep/static/js/runtime-main.6f2dcb3c.js.map",
+    "static/js/2.490fbe74.chunk.js": "/IgnatTasksRep/static/js/2.490fbe74.chunk.js",
+    "static/js/2.490fbe74.chunk.js.map": "/IgnatTasksRep/static/js/2.490fbe74.chunk.js.map",
+    "index.html": "/IgnatTasksRep/index.html",
+    "precache-manifest.e77dd7c62ada1ac8912d33c7b2329ea5.js": "/IgnatTasksRep/precache-manifest.e77dd7c62ada1ac8912d33c7b2329ea5.js",
+    "service-worker.js": "/IgnatTasksRep/service-worker.js",
+    "static/css/main.6e8be272.chunk.css.map": "/IgnatTasksRep/static/css/main.6e8be272.chunk.css.map",
+    "static/js/2.490fbe74.chunk.js.LICENSE.txt": "/IgnatTasksRep/static/js/2.490fbe74.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6f2dcb3c.js",
+    "static/js/2.490fbe74.chunk.js",
+    "static/css/main.6e8be272.chunk.css",
+    "static/js/main.8ed88b1a.chunk.js"
+  ]
+}
