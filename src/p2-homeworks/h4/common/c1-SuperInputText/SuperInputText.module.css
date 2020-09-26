@@ -5,9 +5,9 @@
 
 .errorInput {
     border: 3px solid lime;
-    background: red;
+    background: #6ed4c9;
 }
 
 .error {
-    color: red;
+    color: #6ed4c9;
 }

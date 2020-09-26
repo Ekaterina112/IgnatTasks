@@ -1,5 +1,5 @@
 .all{
-    background-color: #3CBC8D;
+    background-color: #6ed4c9;
     color: white;
 }
 
@@ -7,7 +7,7 @@
     padding: 5px 20px;
     margin: 5px 0;
     border-color: white;
-    background-color: #3CBC8D;
+    background-color: #6ed4c9;
     color: white;
     outline: none;
 }
@@ -16,7 +16,7 @@
     margin: 5px 0;
     box-sizing: border-box;
     border-color: red;
-    background-color: #3CBC8D;
+    background-color: #6ed4c9;
     color: white;
     outline: none;
 }
@@ -24,7 +24,7 @@
     padding: 5px 20px;
     margin: 5px 0;
     border-color: white;
-    background-color: #3CBC8D;
+    background-color: #6ed4c9;
     color: white;
     outline: none;
 }

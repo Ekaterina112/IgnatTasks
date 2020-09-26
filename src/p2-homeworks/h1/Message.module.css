@@ -1,11 +1,11 @@
 .canvas {
-    background-color: greenyellow;
-    height: 250px;
+    background-color: #6ed4c9;
+    height: 150px;
 }
 .form {
     margin-top: 10px;
     margin-left: 60px;
-    position: absolute;
+    position: fixed;
     background: black;
     border-radius: .4em;
     width: 210px;
@@ -18,7 +18,7 @@
     position: fixed;
     margin-top: 20px;
     border-radius: 100px;
-    border: 2px solid green;
+    border: 2px solid #6ed4c9;
 }
 .name {
     color: blueviolet;

@@ -1,0 +1,38 @@
+.nav {
+    background-color: black;
+    font-family: Bahnschrift;
+    color: white;
+    padding: 20px;
+}
+.item a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+.item a.activeLink {
+    color: #6ed4c9;
+}
+
+.bg {
+    position:fixed;
+    z-index: -1;
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+}
+.homepage  {
+    font-family: Bahnschrift;
+    color: #fcfcfc;
+    text-decoration: none;
+    padding-top: 50px;
+    padding-right: 10px;
+    font-size: 40px;
+}
+.homepage a  {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+.homepage a:hover  {
+    color: #886b49;
+}
