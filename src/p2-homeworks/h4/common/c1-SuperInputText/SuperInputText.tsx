@@ -11,11 +11,10 @@ type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё проп
     onEnter?: () => void
     error?: string
     spanClassName?: string
-    value:string
 };
 
 const SuperInputText: React.FC<SuperInputTextPropsType> = (
-    { value:string,
+    { value,
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeText,
         onKeyPress, onEnter,
