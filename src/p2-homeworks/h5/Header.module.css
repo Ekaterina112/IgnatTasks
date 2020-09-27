@@ -36,3 +36,7 @@
 .homepage a:hover  {
     color: #886b49;
 }
+.entered {
+    font-family: Bahnschrift;
+    font-size: 15px;
+}
