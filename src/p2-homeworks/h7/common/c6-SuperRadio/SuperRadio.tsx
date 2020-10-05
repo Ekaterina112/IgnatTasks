@@ -1,4 +1,5 @@
 import React, {ChangeEvent, InputHTMLAttributes, DetailedHTMLProps} from 'react';
+import {Checkbox, Radio} from '@material-ui/core';
 
 type DefaultRadioPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
@@ -15,12 +16,9 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         ...restProps
     }
 ) => {
-    /*const onChangeCallback = (val: string) => {
-            onChangeOption(val)
-            // onChange, onChangeOption*/
     const onChangeCallback = (e:ChangeEvent<HTMLInputElement>) => {
         onChangeOption && onChangeOption(e.target.value)
-            // onChange, onChangeOption
+
     }
 
 
@@ -28,13 +26,12 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         return (
             (
                 <label key={name + '-' + i}>
-                    <input
-                        type={'radio'}
-                        name={name}
-                        checked={ o === value }
-                        value={o}
+                    <Radio
+                        checked={o === value}
                         onChange={onChangeCallback}
-                        // name, checked, value, onChange
+                        value={o}
+                        color="default"
+                        name={name}
                     />
                     {o}
                 </label>
