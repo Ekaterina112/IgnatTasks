@@ -1,5 +1,10 @@
 import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from 'react';
 import {v1} from 'uuid';
+import {createStyles, FormControl, InputLabel, Select, Theme} from '@material-ui/core';
+import {makeStyles} from '@material-ui/core/styles';
+
+
+
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
@@ -11,24 +16,41 @@ type SuperSelectPropsType = DefaultSelectPropsType & {
 const SuperSelect: React.FC<SuperSelectPropsType> = (
     {
         options,
-        onChange, onChangeOption,
+        onChange, value, onChangeOption,
         ...restProps
     }
 ) => {
     const mappedOptions: any[] = options ? options.map((o, i) => {
-        return (<option key={i} value={o} selected={o}>{o}</option>)}) : []//what is it?????
+        return (<option key={i} value={o} selected={o}>{o}</option>)
+    }) : []//what is it?????
 
 
-    const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        onChangeOption && onChangeOption(e.target.value)
-        // onChange, onChangeOption
-    }
+    // const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
+    //     onChangeOption && onChangeOption(e.target.value)
+    //     // onChange, onChangeOption
+    // }
+
+    const handleChange = (event: React.ChangeEvent<{ name?: string; value: unknown }>) => {
+        onChangeOption && onChangeOption(event.target.value)
+    };
 
     return (
-        <select onChange={onChangeCallback} {...restProps}>
-            {mappedOptions}
-        </select>
 
+        <FormControl variant="outlined">
+            <InputLabel htmlFor="outlined-age-native-simple">"click here"</InputLabel>
+            <Select
+                native
+                value={value}
+                onChange={handleChange}
+                label="click here"
+                inputProps={{
+                    name: 'age',
+                    id: 'age-native-simple',
+                }}
+            >
+                {mappedOptions}
+            </Select>
+        </FormControl>
     );
 }
 
