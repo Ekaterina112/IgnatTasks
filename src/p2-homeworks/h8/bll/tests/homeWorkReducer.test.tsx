@@ -1,7 +1,8 @@
 import React from 'react';
 import {homeWorkReducer} from "../homeWorkReducer";
+import {InitialPeopleType} from '../../HW8';
 
-let initialState: any[];
+let initialState: InitialPeopleType[];
 
 beforeEach(() => {
     initialState = [
@@ -16,17 +17,20 @@ beforeEach(() => {
 
 test("sort name up", () => {
     const newState = homeWorkReducer(initialState, {type: "sort", payload: "up"});
-
     console.log(newState);
-    // expect(...).toBe(...);
+    expect(newState[0]).toBe(initialState[1]);
+    expect(newState[5]).toBe(initialState[0]);
 });
 test("sort name down", () => {
     const newState = homeWorkReducer(initialState, {type: "sort", payload: "down"});
-
+    expect(newState[0]).toBe(initialState[0]);
+    expect(newState[5]).toBe(initialState[1]);
 
 });
 test("check age 18", () => {
     const newState = homeWorkReducer(initialState, {type: "check", payload: 18});
-
+    expect(newState.length).toBe(4)
 
 });
+//тесть прошли только после замены tobe на toStrictEqual
+//
