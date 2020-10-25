@@ -41,9 +41,9 @@ function HW8() {
     const check = () => setPeople(homeWorkReducer(initialPeople, {type: "check", payload: 18}))
     return (
         <div>
-            <hr/>
-            homeworks 8
 
+            homeworks 8
+            <hr/>
             {/*should work (должно работать)*/}
 
             {finalPeople}

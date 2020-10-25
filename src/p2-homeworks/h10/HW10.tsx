@@ -15,15 +15,15 @@ function HW10() {
         }, 2000)
 
     };
-    return (
-        <div>
-            <hr/>
-            homeworks 10
 
+      return (
+        <div>
+            homeworks 10
+            <hr/>
             {/*should work (должно работать)*/}
             {load
                 ? (
-                    <div>крутилка...</div>
+                    <img src={require('./../../833.gif')}  alt="here is крутилка" />
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>

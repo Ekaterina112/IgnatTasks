@@ -8,7 +8,7 @@ import {PATH} from '../Routes';
 function Error404() {
     return (
         <div>
-            <img src={require('./../../../grumpy-cat.jpg')}  alt="here is a cat" className={s.bg}/>
+            <img src={require('./../../../grumpy-cat.jpg')}  alt="here is a cat" />
             <div className={s.homepage}> Please, return at
                 <span>
                     <NavLink to={PATH.PRE_JUNIOR}> HOMEPAGE </NavLink>
