@@ -1,16 +1,16 @@
 const WORK = 'WORK'
 export type InitStateType = {
-    load: boolean
+    isLoad: boolean
 }
 const initState: InitStateType = {
-    load: false
+    isLoad: false
 };
 
 export const loadingReducer = (state = initState, action: ChangeActionType): InitStateType => {
 
     switch (action.type) {
         case WORK: {
-            return {...state, load: action.load};
+            return {...state, isLoad: action.isLoad};
         }
         default:
             return state;
@@ -18,8 +18,8 @@ export const loadingReducer = (state = initState, action: ChangeActionType): Ini
 };
 export type ChangeActionType = {
     type: 'WORK',
-    load: boolean
+    isLoad: boolean
 };
-export const loadingAC = (load: boolean): ChangeActionType => {
-    return {type: WORK, load} as const
+export const loadingAC = (isLoad: boolean): ChangeActionType => {
+    return {type: WORK, isLoad} as const
 };

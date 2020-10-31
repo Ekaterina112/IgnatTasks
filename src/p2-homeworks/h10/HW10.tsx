@@ -6,8 +6,8 @@ import {AppStoreType} from './bll/store';
 
 function HW10() {
     const dispatch = useDispatch()
-    const loading = useSelector<AppStoreType, InitStateType>(state => state.isLoad)//piece of state
-    const load = loading.load
+    const loading = useSelector<AppStoreType, InitStateType>(state => state.load)//piece of state
+    const load = loading.isLoad
     const setLoading = () => {
         dispatch(loadingAC(true))
         setTimeout(() => {

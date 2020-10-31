@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Affairs from './Affairs';
-import AlternativeAffairs from './AlternativeAffairs';
+
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle' ; // need to fix any
@@ -48,9 +48,8 @@ function HW2() {
 
     return (
         <div>
-            <hr/>
             homeworks 2
-
+            <hr/>
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
@@ -59,10 +58,10 @@ function HW2() {
 
             />
 
-            <hr/>
-          {/*  для личного творчества, могу проверить*/}
-         {/*   <AlternativeAffairs/>*/}
-            <hr/>
+         {/*   <hr/>
+            для личного творчества, могу проверить
+            <AlternativeAffairs/>
+            <hr/>*/}
         </div>
     );
 }
