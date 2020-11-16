@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/IgnatTasksRep/static/css/main.1aaf420e.chunk.css",
-    "main.js": "/IgnatTasksRep/static/js/main.4e036155.chunk.js",
-    "main.js.map": "/IgnatTasksRep/static/js/main.4e036155.chunk.js.map",
-    "runtime-main.js": "/IgnatTasksRep/static/js/runtime-main.6f2dcb3c.js",
-    "runtime-main.js.map": "/IgnatTasksRep/static/js/runtime-main.6f2dcb3c.js.map",
-    "static/js/2.82f9b326.chunk.js": "/IgnatTasksRep/static/js/2.82f9b326.chunk.js",
-    "static/js/2.82f9b326.chunk.js.map": "/IgnatTasksRep/static/js/2.82f9b326.chunk.js.map",
+    "main.css": "/IgnatTasksRep/static/css/main.75cb2c68.chunk.css",
+    "main.js": "/IgnatTasksRep/static/js/main.d165f788.chunk.js",
+    "main.js.map": "/IgnatTasksRep/static/js/main.d165f788.chunk.js.map",
+    "runtime-main.js": "/IgnatTasksRep/static/js/runtime-main.80b7007e.js",
+    "runtime-main.js.map": "/IgnatTasksRep/static/js/runtime-main.80b7007e.js.map",
+    "static/js/2.3c6568f5.chunk.js": "/IgnatTasksRep/static/js/2.3c6568f5.chunk.js",
+    "static/js/2.3c6568f5.chunk.js.map": "/IgnatTasksRep/static/js/2.3c6568f5.chunk.js.map",
     "index.html": "/IgnatTasksRep/index.html",
-    "precache-manifest.936da825c7f00a59caf0589d1b27fd0d.js": "/IgnatTasksRep/precache-manifest.936da825c7f00a59caf0589d1b27fd0d.js",
+    "precache-manifest.01663baabe5945639c88e77393cf6536.js": "/IgnatTasksRep/precache-manifest.01663baabe5945639c88e77393cf6536.js",
     "service-worker.js": "/IgnatTasksRep/service-worker.js",
-    "static/css/main.1aaf420e.chunk.css.map": "/IgnatTasksRep/static/css/main.1aaf420e.chunk.css.map",
-    "static/js/2.82f9b326.chunk.js.LICENSE.txt": "/IgnatTasksRep/static/js/2.82f9b326.chunk.js.LICENSE.txt",
+    "static/css/main.75cb2c68.chunk.css.map": "/IgnatTasksRep/static/css/main.75cb2c68.chunk.css.map",
+    "static/js/2.3c6568f5.chunk.js.LICENSE.txt": "/IgnatTasksRep/static/js/2.3c6568f5.chunk.js.LICENSE.txt",
     "static/media/833.gif": "/IgnatTasksRep/static/media/833.2a8ff6bb.gif",
     "static/media/grumpy-cat.jpg": "/IgnatTasksRep/static/media/grumpy-cat.5bb062c0.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6f2dcb3c.js",
-    "static/js/2.82f9b326.chunk.js",
-    "static/css/main.1aaf420e.chunk.css",
-    "static/js/main.4e036155.chunk.js"
+    "static/js/runtime-main.80b7007e.js",
+    "static/js/2.3c6568f5.chunk.js",
+    "static/css/main.75cb2c68.chunk.css",
+    "static/js/main.d165f788.chunk.js"
   ]
 }
