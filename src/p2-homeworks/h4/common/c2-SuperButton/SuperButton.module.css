@@ -1,12 +1,12 @@
 .default {
-background: #6ed4c9;
-color: white;
+background: white;
+color: #090000;
     font-family: Bahnschrift;
     font-size: 15px;
 }
 
 .red {
-    background: #6ed4c9;
+    background: white;
 }
 .spanSix {
     font-family: Bahnschrift;

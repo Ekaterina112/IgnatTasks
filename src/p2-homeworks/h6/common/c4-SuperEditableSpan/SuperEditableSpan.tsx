@@ -1,7 +1,10 @@
 import React, {DetailedHTMLProps, InputHTMLAttributes, HTMLAttributes, useState} from "react";
 import SuperInputText from '../../../h4/common/c1-SuperInputText/SuperInputText';
 import s from './../../../h5/Header.module.css'
-import {callbackify} from 'util';
+import {useSelector} from 'react-redux';
+import {AppStoreType} from '../../../h10/bll/store';
+import {ThemeStateType} from '../../../h12/bll/themeReducer';
+import st from '../../../h12/HW12.module.css'
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
@@ -49,9 +52,9 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     };
 
     const spanClassName = `${s.entered} ${className}`;
-
+    const state =useSelector<AppStoreType, ThemeStateType>(state => state.theme)
     return (
-        <>
+        <div className={st[state.theme]}>
             {editMode
                 ? (
                     <SuperInputText
@@ -75,7 +78,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                     </span>
                 )
             }
-        </>
+        </div>
     );
 }
 

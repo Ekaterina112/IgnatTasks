@@ -4,10 +4,10 @@
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: #6ed4c9;
+    border: 3px solid #ee1e1e;
+    background: #e5eeee;
 }
 
 .error {
-    color: #6ed4c9;
+    color: #d90a2c;
 }

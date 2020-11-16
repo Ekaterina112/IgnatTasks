@@ -3,7 +3,10 @@ import SuperInputText from "./common/c1-SuperInputText/SuperInputText";
 import s from "./HW4.module.css";
 import SuperButton from "./common/c2-SuperButton/SuperButton";
 import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
-
+import {useSelector} from 'react-redux';
+import {AppStoreType} from '../h10/bll/store';
+import {ThemeStateType} from '../h12/bll/themeReducer';
+import st from '../h12/HW12.module.css'
 function HW4() {
     const [text, setText] = useState<string>("");
 
@@ -18,14 +21,14 @@ function HW4() {
 
     const [checked, setChecked] = useState<boolean>(false);
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
-
+    const state =useSelector<AppStoreType, ThemeStateType>(state => state.theme)
     return (
         <div>
             homeworks 4
             <hr/>
 
 
-            <div className={s.column}>
+            <div className={`${s.column} ${st[state.theme]}`}>
                 {/*should work (должно работать)*/}
                 <SuperInputText
                     value={text}

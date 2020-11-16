@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from '@material-ui/core/Slider';
 import {colors} from '@material-ui/core';
+import {blueGrey} from '@material-ui/core/colors';
 
 // тип пропсов обычного инпута
 
@@ -30,7 +31,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     return (
         <Slider
             style={{
-                color:"#6ed4c9",
+                color:"grey",
                 width:500
             }}
             value={value}

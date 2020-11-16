@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import SuperSelect from './common/c5-SuperSelect/SuperSelect';
 import SuperRadio from './common/c6-SuperRadio/SuperRadio';
 import s from "./../h7/common/H7.module.css";
+import {useSelector} from 'react-redux';
+import {AppStoreType} from '../h10/bll/store';
+import {ThemeStateType} from '../h12/bll/themeReducer';
+import st from '../h12/HW12.module.css'
 const arr = ['x', 'y', 'z'];
 
 
@@ -11,9 +15,9 @@ function HW7() {
     const onChangeOptionHandler = (value: string) => {
         onChangeOption(value)
     }
-
+    const state =useSelector<AppStoreType, ThemeStateType>(state => state.theme)
     return (
-        <div className={s.all}>
+        <div className={st[state.theme]}>
             homeworks 7
             <hr/>
 

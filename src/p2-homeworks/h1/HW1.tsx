@@ -1,5 +1,9 @@
 import React from "react";
 import Message from './Message';
+import {useSelector} from 'react-redux';
+import {AppStoreType} from '../h10/bll/store';
+import {ThemeStateType} from '../h12/bll/themeReducer';
+import s from '../h12/HW12.module.css';
 
 const messageData = {
     avatar: "https://klike.net/uploads/posts/2019-07/1564314090_3.jpg",
@@ -9,8 +13,11 @@ const messageData = {
 };
 
 function HW1() {
+    const state =useSelector<AppStoreType, ThemeStateType>(state => state.theme)
+
+
     return (
-        <div>
+        <div className={s[state.theme]}>
 
             homeworks 1
             <hr/>
