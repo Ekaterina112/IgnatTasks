@@ -23,7 +23,6 @@ function HW12() {
                 homeworks 12
             </span>
             <SuperRadio
-                name={'radio'}
                 options={state.themes}
                 value={state.theme}
                 onChangeOption={onChangeCallback}
