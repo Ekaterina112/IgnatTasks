@@ -1,7 +1,6 @@
 import React from 'react';
 import Slider from '@material-ui/core/Slider';
-import {colors} from '@material-ui/core';
-import {blueGrey} from '@material-ui/core/colors';
+
 
 // тип пропсов обычного инпута
 

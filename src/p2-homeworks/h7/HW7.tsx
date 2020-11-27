@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import SuperSelect from './common/c5-SuperSelect/SuperSelect';
 import SuperRadio from './common/c6-SuperRadio/SuperRadio';
-import s from "./../h7/common/H7.module.css";
 import {useSelector} from 'react-redux';
 import {AppStoreType} from '../h10/bll/store';
 import {ThemeStateType} from '../h12/bll/themeReducer';
